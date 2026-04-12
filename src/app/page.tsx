@@ -1,31 +1,10 @@
-const SUPPORT_EMAIL = "dayyanwani765@gmail.com";
-const MAILTO = `mailto:${SUPPORT_EMAIL}`;
+import { MAILTO_SUPPORT, SUPPORT_EMAIL } from "@/lib/site";
 
 export default function Home() {
   return (
     <div className="relative isolate flex min-h-full flex-1 flex-col overflow-hidden">
-      {/* Ambient background */}
-      <div
-        className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-zinc-100 via-teal-50/40 to-violet-100/50 dark:from-zinc-950 dark:via-teal-950/20 dark:to-violet-950/30"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none fixed -left-1/4 top-1/4 -z-10 h-[min(80vw,36rem)] w-[min(80vw,36rem)] rounded-full bg-teal-400/25 blur-3xl dark:bg-teal-500/15 mg-orb"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none fixed -right-1/4 bottom-0 -z-10 h-[min(90vw,42rem)] w-[min(90vw,42rem)] rounded-full bg-violet-400/20 blur-3xl dark:bg-violet-500/12 mg-orb-slow"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none fixed left-1/2 top-1/2 -z-10 h-px w-[120%] -translate-x-1/2 -translate-y-1/2 rotate-[-8deg] bg-gradient-to-r from-transparent via-white/40 to-transparent dark:via-white/10"
-        aria-hidden
-      />
-
-      <main className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center px-5 py-16 sm:px-6 sm:py-24">
-        <div
-          className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/75 p-8 shadow-lg shadow-zinc-900/5 backdrop-blur-xl transition-shadow duration-500 hover:shadow-xl hover:shadow-teal-900/10 dark:border-zinc-700/60 dark:bg-zinc-900/70 dark:shadow-black/40 dark:hover:shadow-teal-950/20 sm:p-10"
-        >
+      <main className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center px-5 py-12 sm:px-6 sm:py-20">
+        <div className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/75 p-8 shadow-lg shadow-zinc-900/5 backdrop-blur-xl transition-shadow duration-500 hover:shadow-xl hover:shadow-teal-900/10 dark:border-zinc-700/60 dark:bg-zinc-900/70 dark:shadow-black/40 dark:hover:shadow-teal-950/20 sm:p-10">
           <div
             className="pointer-events-none absolute inset-0 rounded-3xl opacity-40 dark:opacity-25 mg-shimmer-border"
             aria-hidden
@@ -53,7 +32,7 @@ export default function Home() {
                   For questions, feedback, or help with MG-1, contact us by email.
                 </p>
                 <a
-                  href={MAILTO}
+                  href={MAILTO_SUPPORT}
                   className="mt-5 inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-medium text-white shadow-md transition-transform duration-200 hover:scale-[1.02] hover:bg-zinc-800 active:scale-[0.98] dark:bg-teal-600 dark:hover:bg-teal-500"
                 >
                   <svg
