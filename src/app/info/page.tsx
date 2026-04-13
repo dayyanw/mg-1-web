@@ -11,12 +11,7 @@ export default function InfoPage() {
   return (
     <div className="relative isolate flex min-h-full flex-1 flex-col overflow-hidden">
       <main className="mx-auto w-full max-w-lg flex-1 px-5 py-10 sm:px-6 sm:py-14">
-        <div className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/75 p-8 shadow-lg shadow-zinc-900/5 backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/70 dark:shadow-black/40 sm:p-10">
-          <div
-            className="pointer-events-none absolute inset-0 rounded-3xl opacity-40 dark:opacity-25 mg-shimmer-border"
-            aria-hidden
-          />
-
+        <div className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/80 p-8 shadow-md shadow-zinc-900/5 backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/75 dark:shadow-black/30 sm:p-10">
           <div className="relative space-y-8">
             <header className="mg-animate-in">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-600 dark:text-teal-400">

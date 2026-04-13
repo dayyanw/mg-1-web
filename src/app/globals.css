@@ -22,13 +22,11 @@
 @keyframes mg-fade-rise {
   from {
     opacity: 0;
-    transform: translateY(1rem);
-    filter: blur(4px);
+    transform: translateY(0.5rem);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    filter: blur(0);
   }
 }
 
@@ -117,7 +115,7 @@
 
 .mg-animate-in {
   opacity: 0;
-  animation: mg-fade-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: mg-fade-rise 0.45s ease-out forwards;
 }
 
 .mg-delay-1 {

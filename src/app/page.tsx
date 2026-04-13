@@ -4,12 +4,7 @@ export default function Home() {
   return (
     <div className="relative isolate flex min-h-full flex-1 flex-col overflow-hidden">
       <main className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center px-5 py-12 sm:px-6 sm:py-20">
-        <div className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/75 p-8 shadow-lg shadow-zinc-900/5 backdrop-blur-xl transition-shadow duration-500 hover:shadow-xl hover:shadow-teal-900/10 dark:border-zinc-700/60 dark:bg-zinc-900/70 dark:shadow-black/40 dark:hover:shadow-teal-950/20 sm:p-10">
-          <div
-            className="pointer-events-none absolute inset-0 rounded-3xl opacity-40 dark:opacity-25 mg-shimmer-border"
-            aria-hidden
-          />
-
+        <div className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/80 p-8 shadow-md shadow-zinc-900/5 backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/75 dark:shadow-black/30 sm:p-10">
           <div className="relative">
             <p className="mg-animate-in text-xs font-semibold uppercase tracking-[0.2em] text-teal-600 dark:text-teal-400">
               Habit tracking
@@ -24,7 +19,7 @@ export default function Home() {
             </p>
 
             <section className="mg-animate-in mg-delay-3 mt-10">
-              <div className="group rounded-2xl border border-zinc-200/90 bg-zinc-50/80 p-6 transition-all duration-300 hover:border-teal-300/60 hover:bg-teal-50/50 dark:border-zinc-600/80 dark:bg-zinc-800/50 dark:hover:border-teal-500/30 dark:hover:bg-teal-950/25">
+              <div className="rounded-2xl border border-zinc-200/90 bg-zinc-50/80 p-6 dark:border-zinc-600/80 dark:bg-zinc-800/50">
                 <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
                   Support
                 </h2>
@@ -33,7 +28,7 @@ export default function Home() {
                 </p>
                 <a
                   href={MAILTO_SUPPORT}
-                  className="mt-5 inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-medium text-white shadow-md transition-transform duration-200 hover:scale-[1.02] hover:bg-zinc-800 active:scale-[0.98] dark:bg-teal-600 dark:hover:bg-teal-500"
+                  className="mt-5 inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-zinc-800 dark:bg-teal-600 dark:hover:bg-teal-500"
                 >
                   <svg
                     className="h-4 w-4 shrink-0 opacity-90"
