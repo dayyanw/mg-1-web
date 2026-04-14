@@ -31,7 +31,7 @@ export default function InfoPage() {
                 <strong className="font-medium text-zinc-800 dark:text-zinc-200">
                   {SITE_NAME}
                 </strong>
-                —a habit tracking app built around productivity, routines,
+                {" "}— a habit tracking app built around productivity, routines,
                 discipline, and goals. The site is intentionally simple: it
                 shares what {SITE_NAME} is and how to reach support.
               </p>
@@ -57,7 +57,8 @@ export default function InfoPage() {
               </p>
               <a
                 href={MAILTO_SUPPORT}
-                className="mt-4 inline-flex text-sm font-medium text-teal-700 underline-offset-4 transition-colors hover:text-teal-800 hover:underline dark:text-teal-400 dark:hover:text-teal-300"
+                className="mt-4 inline-flex break-all rounded-md text-sm font-medium text-teal-700 underline-offset-4 transition-colors hover:text-teal-800 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500/80 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-50 dark:text-teal-400 dark:hover:text-teal-300 dark:focus-visible:ring-teal-300/80 dark:focus-visible:ring-offset-zinc-800"
+                aria-label={`Email support at ${SUPPORT_EMAIL}`}
               >
                 {SUPPORT_EMAIL}
               </a>
