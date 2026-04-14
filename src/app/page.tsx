@@ -3,9 +3,10 @@ import { MAILTO_SUPPORT, SUPPORT_EMAIL } from "@/lib/site";
 export default function Home() {
   return (
     <div className="relative isolate flex min-h-full flex-1 flex-col overflow-hidden">
-      <main className="mx-auto flex w-full max-w-lg flex-1 flex-col justify-center px-5 py-12 sm:px-6 sm:py-20">
-        <div className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/80 p-8 shadow-md shadow-zinc-900/5 backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/75 dark:shadow-black/30 sm:p-10">
-          <div className="relative">
+      <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col justify-center px-5 py-12 sm:px-6 sm:py-16">
+        <div className="grid gap-6 lg:grid-cols-[1.35fr_1fr]">
+          <section className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-white/80 p-8 shadow-md shadow-zinc-900/5 backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/75 dark:shadow-black/30 sm:p-10">
+            <div className="relative">
             <p className="mg-animate-in text-xs font-semibold uppercase tracking-[0.2em] text-teal-600 dark:text-teal-400">
               Habit tracking
             </p>
@@ -17,37 +18,64 @@ export default function Home() {
               goals. This site provides product information and how to reach
               support.
             </p>
-
-            <section className="mg-animate-in mg-delay-3 mt-10">
-              <div className="rounded-2xl border border-zinc-200/90 bg-zinc-50/80 p-6 dark:border-zinc-600/80 dark:bg-zinc-800/50">
-                <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
-                  Support
-                </h2>
-                <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                  For questions, feedback, or help with MG-1, contact us by email.
+            <div className="mg-animate-in mg-delay-3 mt-8 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-2xl border border-zinc-200/80 bg-zinc-50/70 p-4 dark:border-zinc-700/70 dark:bg-zinc-800/40">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400">
+                  Daily focus
                 </p>
-                <a
-                  href={MAILTO_SUPPORT}
-                  className="mt-5 inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-zinc-800 dark:bg-teal-600 dark:hover:bg-teal-500"
-                >
-                  <svg
-                    className="h-4 w-4 shrink-0 opacity-90"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden
-                  >
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                  <span className="truncate">{SUPPORT_EMAIL}</span>
-                </a>
+                <p className="mt-2 text-sm font-medium text-zinc-700 dark:text-zinc-200">
+                  Build routines that actually stick.
+                </p>
               </div>
-            </section>
-          </div>
+              <div className="rounded-2xl border border-zinc-200/80 bg-zinc-50/70 p-4 dark:border-zinc-700/70 dark:bg-zinc-800/40">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400">
+                  Momentum
+                </p>
+                <p className="mt-2 text-sm font-medium text-zinc-700 dark:text-zinc-200">
+                  Track progress with clean, simple views.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-zinc-200/80 bg-zinc-50/70 p-4 dark:border-zinc-700/70 dark:bg-zinc-800/40">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400">
+                  Clarity
+                </p>
+                <p className="mt-2 text-sm font-medium text-zinc-700 dark:text-zinc-200">
+                  Stay organized with less friction.
+                </p>
+              </div>
+            </div>
+            </div>
+          </section>
+
+          <section className="mg-animate-in mg-delay-3 h-fit rounded-3xl border border-zinc-200/80 bg-white/80 p-6 shadow-md shadow-zinc-900/5 backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/75 dark:shadow-black/30 sm:p-7">
+            <div className="rounded-2xl border border-zinc-200/90 bg-zinc-50/80 p-6 dark:border-zinc-600/80 dark:bg-zinc-800/50">
+              <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
+                Support
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                For questions, feedback, or help with MG-1, contact us by email.
+              </p>
+              <a
+                href={MAILTO_SUPPORT}
+                className="mt-5 inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-zinc-800 dark:bg-teal-600 dark:hover:bg-teal-500"
+              >
+                <svg
+                  className="h-4 w-4 shrink-0 opacity-90"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span className="truncate">{SUPPORT_EMAIL}</span>
+              </a>
+            </div>
+          </section>
         </div>
       </main>
     </div>
